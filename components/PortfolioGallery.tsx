@@ -21,15 +21,15 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Secure Student Registry",
-      description: "A comprehensive Java-based registry management application. Implements JDBC for MySQL database connectivity, featuring a Swing GUI for efficient data entry and validation.",
+      title: "Secure Student Information Hub",
+      description: "A centralized records management system built in Java. Implements JDBC for MySQL database connectivity, featuring a Swing GUI for efficient data entry and validation.",
       tech: ["Java", "Swing", "MySQL", "JDBC"],
       category: "Java",
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 2,
-      title: "Logic Visualization Engine",
+      title: "Dynamic Algorithmic Visualizer",
       description: "A Python project that visualizes complex sorting and searching algorithms in real-time. Designed to clarify time-complexity for academic audiences.",
       tech: ["Python", "Pygame"],
       category: "Python",
@@ -45,7 +45,7 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
     },
     {
       id: 4,
-      title: "DevOps Automation Suite",
+      title: "Workflow Automation Suite",
       description: "A collection of robust Python scripts designed to automate local environment setup, academic task parsing, and daily resource management routines.",
       tech: ["Python", "OS Library"],
       category: "Python",
@@ -61,7 +61,7 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
     },
     {
       id: 6,
-      title: "Professional Engineer Portfolio",
+      title: "Modern Engineer Portfolio",
       description: "A modern, high-performance portfolio site designed with React and Tailwind CSS to showcase engineering projects and academic milestones.",
       tech: ["React", "Tailwind"],
       category: "Web",
@@ -85,8 +85,8 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
               <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
               Back to Portal
             </button>
-            <h1 className="text-5xl lg:text-7xl font-extrabold text-slate-900 tracking-tight">Full Project Gallery</h1>
-            <p className="text-xl text-slate-500 max-w-2xl leading-relaxed">
+            <h1 className="text-5xl lg:text-7xl font-extrabold text-slate-900 tracking-tight text-balance">Full Project Gallery</h1>
+            <p className="text-xl text-slate-500 max-w-2xl leading-relaxed text-balance">
               Detailed exploration and technical implementation of software engineering principles through academic and personal development.
             </p>
           </div>

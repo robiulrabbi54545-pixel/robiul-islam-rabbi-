@@ -8,17 +8,17 @@ const About: React.FC = () => {
       <div className="grid lg:grid-cols-12 gap-20">
         <div className="lg:col-span-6 space-y-10">
           <div>
-            <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Professional Bio</h2>
-            <h3 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-[1.1]">Merging Precision Logic with Engineering Excellence.</h3>
+            <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Professional Narrative</h2>
+            <h3 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-[1.1]">Merging Computational Logic with Scalable Engineering.</h3>
             <div className="space-y-6 text-slate-500 text-lg leading-relaxed">
               <p>
-                My name is <span className="text-slate-900 font-bold">Robiul Islam Rabbi</span>, a Computer Science and Engineering student currently living in <span className="text-indigo-600 font-semibold">Punjab, India</span>. I am driven by the challenge of architecting robust systems that solve real-world problems through code.
+                I am <span className="text-slate-900 font-bold">Robiul Islam Rabbi</span>, a Computer Science and Engineering student currently residing in the vibrant state of <span className="text-indigo-600 font-semibold">Punjab, India</span>. My engineering journey is defined by a relentless curiosity for how complex systems operate and a passion for building them from the ground up.
               </p>
               <p>
-                Currently in my final year at <span className="font-bold text-slate-800">Lovely Professional University (LPU)</span>, I have cultivated a deep expertise in <span className="text-indigo-600 font-semibold">Object-Oriented Programming</span> and backend systems. My core technical stack revolves around Java, C++, and Python, with a strong focus on data structural efficiency.
+                As a final-year scholar at <span className="font-bold text-slate-800">Lovely Professional University (LPU)</span>, I have focused my academic career on mastering <span className="text-indigo-600 font-semibold">Backend Development</span> and high-level architectural patterns. My expertise spans Java, C++, and Python, where I prioritize code efficiency and data structural integrity.
               </p>
               <p>
-                I am not just a developer; I am a lifelong learner committed to staying at the forefront of the technological landscape. My approach to engineering is centered on clarity, maintainability, and scalable performance.
+                I believe that software engineering is an art of continuous improvement. Beyond just writing code, I strive to create maintainable, efficient, and user-centric ecosystems that solve real-world challenges through elegant logic.
               </p>
             </div>
           </div>
@@ -27,7 +27,7 @@ const About: React.FC = () => {
              <div className="p-6 bg-white border border-slate-100 rounded-2xl flex items-center gap-4 shadow-sm">
                 <MapPin className="text-indigo-600 shrink-0" size={20} />
                 <div>
-                   <p className="text-[10px] font-black uppercase text-slate-400">Base</p>
+                   <p className="text-[10px] font-black uppercase text-slate-400">Location</p>
                    <p className="text-sm font-bold text-slate-900">Punjab, IN</p>
                 </div>
              </div>
@@ -41,7 +41,7 @@ const About: React.FC = () => {
              <div className="p-6 bg-white border border-slate-100 rounded-2xl flex items-center gap-4 shadow-sm">
                 <Calendar className="text-indigo-600 shrink-0" size={20} />
                 <div>
-                   <p className="text-[10px] font-black uppercase text-slate-400">Class</p>
+                   <p className="text-[10px] font-black uppercase text-slate-400">Graduation</p>
                    <p className="text-sm font-bold text-slate-900">Batch '25</p>
                 </div>
              </div>
@@ -55,10 +55,10 @@ const About: React.FC = () => {
             </div>
             <h4 className="font-bold text-xl mb-4 flex items-center gap-3">
               <Briefcase size={24} className="text-indigo-200" />
-              Engineering Philosophy
+              Core Philosophy
             </h4>
             <p className="text-indigo-50 text-lg leading-relaxed relative z-10">
-              "To build software that isn't just functional, but built on the first principles of computer science: efficiency, scalability, and integrity."
+              "To engineer software systems that are not only high-performing but also built on a foundation of clean code, scalability, and technical transparency."
             </p>
           </div>
 
@@ -67,15 +67,15 @@ const About: React.FC = () => {
               <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all">
                 <Code size={24} />
               </div>
-              <h5 className="font-bold text-slate-900 mb-2">Backend Proficiency</h5>
-              <p className="text-sm text-slate-500 leading-relaxed">Specializing in Java-based enterprise architectures and high-performance logic.</p>
+              <h5 className="font-bold text-slate-900 mb-2">Backend Integrity</h5>
+              <p className="text-sm text-slate-500 leading-relaxed">Specializing in Java-driven enterprise logic and high-efficiency database management.</p>
             </div>
             <div className="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-indigo-100 transition-all group">
               <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all">
                 <BookText size={24} />
               </div>
-              <h5 className="font-bold text-slate-900 mb-2">Academic Dedication</h5>
-              <p className="text-sm text-slate-500 leading-relaxed">Maintaining a consistent drive for excellence in theoretical and applied engineering.</p>
+              <h5 className="font-bold text-slate-900 mb-2">Academic Rigor</h5>
+              <p className="text-sm text-slate-500 leading-relaxed">Consistently pursuing academic excellence to bridge the gap between theory and industry.</p>
             </div>
           </div>
         </div>
