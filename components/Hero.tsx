@@ -14,7 +14,7 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
     }
   };
 
-  const RESUME_URL = "#"; // Placeholder for actual curriculum vitae link
+  const RESUME_URL = "#"; // Placeholder link for curriculum vitae
 
   return (
     <div className="min-h-screen flex items-center pt-24 px-6 max-w-7xl mx-auto">

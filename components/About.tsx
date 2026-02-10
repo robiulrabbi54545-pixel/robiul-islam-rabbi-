@@ -8,17 +8,17 @@ const About: React.FC = () => {
       <div className="grid lg:grid-cols-12 gap-20">
         <div className="lg:col-span-6 space-y-10">
           <div>
-            <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Professional Profile</h2>
-            <h3 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-[1.1]">Merging Theory with Industrial Grade Engineering.</h3>
+            <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">About Me</h2>
+            <h3 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-[1.1]">Bridging Theory with Industrial Grade Engineering.</h3>
             <div className="space-y-6 text-slate-500 text-lg leading-relaxed">
               <p>
-                I am <span className="text-slate-900 font-bold">Robiul Islam Rabbi</span>, a Computer Science & Engineering student currently based in <span className="text-indigo-600 font-semibold">Punjab, India</span>. My passion lies in building resilient, efficient, and scalable software solutions that bridge the gap between abstract concepts and real-world utility.
+                I am <span className="text-slate-900 font-bold">Robiul Islam Rabbi</span>, a Computer Science & Engineering student currently living in <span className="text-indigo-600 font-semibold">Punjab, India</span>. My passion is rooted in building efficient, scalable software that solves meaningful problems through clean code and modern engineering practices.
               </p>
               <p>
-                As a final-year scholar at <span className="font-bold text-slate-800">Lovely Professional University (LPU)</span>, I have dedicated my studies to mastering <span className="text-indigo-600 font-semibold">Backend Development</span> and software architectural patterns. My expertise in Java, C++, and Python is focused on writing clean, maintainable code optimized for performance.
+                Currently in my final year at <span className="font-bold text-slate-800">Lovely Professional University (LPU)</span>, I am specializing in <span className="text-indigo-600 font-semibold">Backend Development</span> and high-level architectural patterns. My expertise spans core technologies like Java, Python, and C++, where I focus on performance and data integrity.
               </p>
               <p>
-                I believe that software engineering is a discipline of lifelong learning. I am constantly refining my skills in algorithmic thinking and systems design, striving to contribute to innovative tech ecosystems as a driven software engineer.
+                I believe that software development is a continuous journey of growth. I am dedicated to honing my skills in algorithmic thinking and systems design, striving to contribute to innovative tech ecosystems that drive positive impact.
               </p>
             </div>
           </div>
@@ -55,10 +55,10 @@ const About: React.FC = () => {
             </div>
             <h4 className="font-bold text-xl mb-4 flex items-center gap-3">
               <Briefcase size={24} className="text-indigo-200" />
-              Engineering Vision
+              Professional Drive
             </h4>
             <p className="text-indigo-50 text-lg leading-relaxed relative z-10">
-              "My mission is to engineer software that is technically superior, resilient to scale, and built on the first principles of computation: modularity, efficiency, and clarity."
+              "To develop software that is resilient, scalable, and built on the first principles of computer science: modularity and efficiency."
             </p>
           </div>
 
@@ -68,14 +68,14 @@ const About: React.FC = () => {
                 <Code size={24} />
               </div>
               <h5 className="font-bold text-slate-900 mb-2">Systems Design</h5>
-              <p className="text-sm text-slate-500 leading-relaxed text-balance">Specializing in Java and C++ to create robust, high-performance modular applications.</p>
+              <p className="text-sm text-slate-500 leading-relaxed">Focusing on Java and C++ to create robust, high-performance modular applications.</p>
             </div>
             <div className="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-indigo-100 transition-all group">
               <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all">
                 <BookText size={24} />
               </div>
               <h5 className="font-bold text-slate-900 mb-2">Academic Excellence</h5>
-              <p className="text-sm text-slate-500 leading-relaxed text-balance">Dedicated to a growth mindset, bridging theoretical foundations with real-world builds.</p>
+              <p className="text-sm text-slate-500 leading-relaxed">Dedicated to a growth mindset, bridging theoretical foundations with real-world builds.</p>
             </div>
           </div>
         </div>

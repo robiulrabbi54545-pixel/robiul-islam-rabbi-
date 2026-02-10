@@ -21,15 +21,15 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Secure Student Data Infrastructure",
-      description: "A comprehensive registry management application built in Java. Implements JDBC for MySQL database connectivity, featuring a Swing GUI for administrative control.",
+      title: "Secure Student Registry Hub",
+      description: "A comprehensive registry management application built in Java. Implements JDBC for MySQL database connectivity, featuring a Swing GUI for efficient data entry and validation.",
       tech: ["Java", "Swing", "MySQL", "JDBC"],
       category: "Java",
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 2,
-      title: "Logic Complexity Visualizer",
+      title: "Complexity Logic Visualizer",
       description: "A Python project that visualizes complex sorting and searching algorithms in real-time. Designed to clarify computational time-complexity through visual feedback.",
       tech: ["Python", "Pygame"],
       category: "Python",
@@ -37,7 +37,7 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
     },
     {
       id: 3,
-      title: "Optimized Library Registry",
+      title: "Optimized Library Infrastructure",
       description: "A high-performance C++ system for book indexing. Implements advanced data structures like AVL Trees and Hash Maps for logarithmic search efficiency.",
       tech: ["C++", "File I/O", "Data Structures"],
       category: "C++",
@@ -45,9 +45,9 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
     },
     {
       id: 4,
-      title: "DevOps Workflow Automation",
-      description: "A collection of robust Python scripts designed to automate local environment setup, academic resource parsing, and system deployment routines.",
-      tech: ["Python", "Automation", "Shell Scripting"],
+      title: "Workflow Automation Suite",
+      description: "A collection of robust Python scripts designed to automate local environment setup, academic task parsing, and system deployment routines.",
+      tech: ["Python", "OS Library"],
       category: "Python",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800"
     },
@@ -142,7 +142,7 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
                 <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-indigo-600 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">
+                <p className="text-slate-500 text-sm leading-relaxed mb-8 flex-grow text-balance">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
