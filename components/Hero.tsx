@@ -14,7 +14,7 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
     }
   };
 
-  const RESUME_URL = "https://example.com/robiul-rabbi-resume.pdf"; 
+  const RESUME_URL = "#"; // Actual link placeholder
 
   return (
     <div className="min-h-screen flex items-center pt-24 px-6 max-w-7xl mx-auto">
@@ -27,7 +27,7 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
               </span>
-              Final Year Engineering Scholar • LPU
+              Final Year CSE Scholar • LPU
             </div>
             
             <h1 className="text-6xl lg:text-8xl font-extrabold tracking-tighter text-slate-900 leading-[0.95] text-balance">
@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
             </h1>
             
             <p className="text-2xl font-medium text-slate-500 max-w-2xl leading-relaxed text-balance border-l-4 border-indigo-200 pl-6">
-              An aspiring software engineer based in <span className="text-slate-900">Punjab, India</span>. Dedicated to architecting robust <span className="text-slate-900">Backend Solutions</span> and high-performance logic with Java, Python, and C++.
+              A high-performing software engineer in training based in <span className="text-slate-900">Punjab, India</span>. Architecting scalable <span className="text-slate-900">Backend Systems</span> and modular applications with Java, Python, and C++.
             </p>
           </div>
           
@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
               onClick={scrollToContact}
               className="px-10 py-5 border-2 border-slate-200 bg-white text-slate-700 rounded-2xl font-bold flex items-center justify-center gap-3 hover:border-indigo-600 hover:text-indigo-600 transition-all active:scale-95 shadow-sm"
             >
-              <Mail size={20} className="text-indigo-600" /> Let's Connect
+              <Mail size={20} className="text-indigo-600" /> Connect Me
             </button>
           </div>
 
@@ -66,12 +66,10 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
              <div className="h-10 w-px bg-slate-200"></div>
              <a 
               href={RESUME_URL}
-              target="_blank"
-              rel="noopener noreferrer"
               className="flex items-center gap-2 text-slate-500 hover:text-indigo-600 font-bold transition-all group"
             >
               <Download size={18} className="group-hover:translate-y-0.5 transition-transform" /> 
-              <span className="border-b-2 border-transparent group-hover:border-indigo-600">Curriculum Vitae</span>
+              <span className="border-b-2 border-transparent group-hover:border-indigo-600">Review Resume</span>
             </a>
           </div>
         </div>

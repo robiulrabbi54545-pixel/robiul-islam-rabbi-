@@ -6,22 +6,22 @@ const LearningJourney: React.FC = () => {
   const journeys = [
     {
       title: "Computing Foundations",
-      desc: "Mastering the fundamental logic of computation through C and C++. Deep focus on memory management, pointer manipulation, and bitwise hardware logic.",
+      desc: "Mastering the fundamental logic of computation through C and C++. Deep focus on memory management, pointers, and iteratve logic for performance-critical tasks.",
       icon: <Terminal size={32} className="text-indigo-600" />
     },
     {
       title: "Advanced OO Architecture",
-      desc: "In-depth study of Object-Oriented paradigms in Java SE. Implementing Abstraction, Encapsulation, and Polymorphism to build scalable modular systems.",
+      desc: "Comprehensive study of Object-Oriented paradigms in Java SE. Implementing Abstraction, Encapsulation, and Polymorphism to build scalable modular systems.",
       icon: <Box size={32} className="text-indigo-600" />
     },
     {
-      title: "Complexity & Data Systems",
-      desc: "Analyzing algorithmic efficiency through Big O notation. Mastering optimized structures like Graphs, AVL Trees, and Hash Maps for high-speed data logic.",
+      title: "Data Logical Systems",
+      desc: "Analyzing algorithmic efficiency through Big O notation. Mastering optimized structures like Graphs, AVL Trees, and Hash Maps for high-speed data retrieval.",
       icon: <BrainCircuit size={32} className="text-indigo-600" />
     },
     {
-      title: "Modern Ecosystem Integration",
-      desc: "Bridging the gap between robust backends and intuitive interfaces. Exploring React and Tailwind to create cohesive, user-centric full-stack experiences.",
+      title: "Modern Ecosystems",
+      desc: "Bridging the gap between high-performance backends and modern interfaces. Exploring React and Tailwind to create cohesive, user-centric full-stack experiences.",
       icon: <Sparkles size={32} className="text-indigo-600" />
     }
   ];
@@ -31,8 +31,8 @@ const LearningJourney: React.FC = () => {
       <div className="text-center mb-20 max-w-3xl mx-auto">
         <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Academic Roadmap</h2>
         <h3 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">What I’m Learning & Exploring</h3>
-        <p className="text-slate-500 text-lg leading-relaxed">
-          The path to engineering mastery is built on continuous curiosity. Here are the core technical pillars of my current academic pursuit as a student at LPU.
+        <p className="text-slate-500 text-lg leading-relaxed text-balance">
+          The path to engineering mastery is built on a foundation of continuous curiosity. Here are the core technical pillars of my current academic pursuit as a scholar at LPU.
         </p>
       </div>
 

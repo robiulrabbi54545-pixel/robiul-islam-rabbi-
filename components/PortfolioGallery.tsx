@@ -21,15 +21,15 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Secure Student Information Hub",
-      description: "A centralized records management system built in Java. Implements JDBC for MySQL database connectivity, featuring a Swing GUI for efficient data entry and validation.",
+      title: "Secure Student Registry Hub",
+      description: "A comprehensive registry management application built in Java. Implements JDBC for MySQL database connectivity, featuring a Swing GUI for efficient data entry and validation.",
       tech: ["Java", "Swing", "MySQL", "JDBC"],
       category: "Java",
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 2,
-      title: "Dynamic Algorithmic Visualizer",
+      title: "Complexity Logic Visualizer",
       description: "A Python project that visualizes complex sorting and searching algorithms in real-time. Designed to clarify time-complexity for academic audiences.",
       tech: ["Python", "Pygame"],
       category: "Python",
@@ -37,8 +37,8 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
     },
     {
       id: 3,
-      title: "Optimized Library Registry",
-      description: "A console application implementing advanced C++ data structures like AVL Trees and Hash Maps for efficient book tracking and inventory management.",
+      title: "Optimized Library Infrastructure",
+      description: "A high-performance C++ system for book indexing. Implements advanced data structures like AVL Trees and Hash Maps for logarithmic search efficiency.",
       tech: ["C++", "File I/O", "Data Structures"],
       category: "C++",
       image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=800"
@@ -46,7 +46,7 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
     {
       id: 4,
       title: "Workflow Automation Suite",
-      description: "A collection of robust Python scripts designed to automate local environment setup, academic task parsing, and daily resource management routines.",
+      description: "A collection of robust Python scripts designed to automate local environment setup, academic task parsing, and system deployment routines.",
       tech: ["Python", "OS Library"],
       category: "Python",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800"
@@ -61,7 +61,7 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
     },
     {
       id: 6,
-      title: "Modern Engineer Portfolio",
+      title: "Professional Engineer Portfolio",
       description: "A modern, high-performance portfolio site designed with React and Tailwind CSS to showcase engineering projects and academic milestones.",
       tech: ["React", "Tailwind"],
       category: "Web",
@@ -142,7 +142,7 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
                 <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-indigo-600 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">
+                <p className="text-slate-500 text-sm leading-relaxed mb-8 flex-grow text-balance">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">

@@ -9,29 +9,29 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({ onViewMore }) => {
   const projects = [
     {
-      title: "Secure Student Information Hub",
-      description: "A centralized registry system engineered with Java. Leverages MySQL for robust data persistence and Swing for a clean administrative interface, focusing on secure CRUD operations and data validation.",
+      title: "Secure Student Registry Hub",
+      description: "A comprehensive management system engineered with Java. Utilizes MySQL for robust data persistence and Swing for a clean administrative interface, focusing on secure CRUD operations and data integrity.",
       tech: ["Java", "Swing", "MySQL", "JDBC"],
       category: "Backend Engineering",
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
     },
     {
-      title: "Dynamic Algorithmic Visualizer",
-      description: "A Python-powered educational tool designed to visualize the step-by-step execution of sorting and pathfinding algorithms. Built using Pygame to provide an interactive learning experience.",
+      title: "Complexity Logic Visualizer",
+      description: "A Python-based educational platform that visualizes sorting and search algorithms in real-time. Built with Pygame to provide an interactive understanding of time complexity and spatial logic.",
       tech: ["Python", "Pygame", "Algorithm Design"],
       category: "Educational Tech",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
     },
     {
-      title: "Optimized Library Management",
-      description: "A C++ system utility designed for high-speed indexing. Implements advanced Data Structures like AVL Trees and Hash Tables to ensure O(log n) search efficiency for extensive book records.",
-      tech: ["C++", "Data Structures", "File I/O"],
+      title: "Optimized Library Infrastructure",
+      description: "A system utility designed for high-speed indexing using C++. Implements advanced data structures like AVL Trees and Hash Maps to achieve logarithmic search efficiency for large-scale book records.",
+      tech: ["C++", "File I/O", "Data Structures"],
       category: "Systems & Data",
       image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=800"
     },
     {
       title: "Workflow Automation Suite",
-      description: "An automation framework built in Python to streamline local development tasks. Includes scripts for environment deployment, academic resource fetching, and automated system maintenance.",
+      description: "An automation framework built in Python to streamline development environments. Features custom scripts for academic task synchronization and automated system maintenance routines.",
       tech: ["Python", "Automation", "Shell Scripting"],
       category: "DevOps & Tooling",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800"
@@ -42,8 +42,8 @@ const Projects: React.FC<ProjectsProps> = ({ onViewMore }) => {
     <div className="max-w-7xl mx-auto px-6">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
         <div>
-          <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Engineering Showcase</h2>
-          <h3 className="text-4xl font-extrabold text-slate-900 leading-tight">Academic & Personal Projects</h3>
+          <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Portfolio Highlights</h2>
+          <h3 className="text-4xl font-extrabold text-slate-900 leading-tight">Academic & Minor Projects</h3>
         </div>
         <button 
           onClick={onViewMore}
