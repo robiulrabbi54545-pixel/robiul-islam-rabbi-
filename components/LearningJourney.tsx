@@ -6,22 +6,22 @@ const LearningJourney: React.FC = () => {
   const journeys = [
     {
       title: "Computing Foundations",
-      desc: "Mastering the fundamental logic of computation through C and C++. Deep focus on memory management, pointers, and iteratve logic for performance-critical tasks.",
+      desc: "Mastering fundamental computation logic via C and C++. Deeply focused on manual memory management, pointer manipulation, and bitwise hardware logic.",
       icon: <Terminal size={32} className="text-indigo-600" />
     },
     {
-      title: "Advanced OO Architecture",
-      desc: "Comprehensive study of Object-Oriented paradigms in Java SE. Implementing Abstraction, Encapsulation, and Polymorphism to build scalable modular systems.",
+      title: "Object-Oriented Architecture",
+      desc: "Comprehensive exploration of OO paradigms in Java SE. Implementing Abstraction, Encapsulation, and Polymorphism to build robust, modular enterprise software.",
       icon: <Box size={32} className="text-indigo-600" />
     },
     {
-      title: "Data Logical Systems",
+      title: "Complexity & Data Systems",
       desc: "Analyzing algorithmic efficiency through Big O notation. Mastering optimized structures like Graphs, AVL Trees, and Hash Maps for high-speed data retrieval.",
       icon: <BrainCircuit size={32} className="text-indigo-600" />
     },
     {
-      title: "Modern Ecosystems",
-      desc: "Bridging the gap between high-performance backends and modern interfaces. Exploring React and Tailwind to create cohesive, user-centric full-stack experiences.",
+      title: "Modern Ecosystem Integration",
+      desc: "Bridging robust backends with intuitive modern interfaces. Exploring React and Tailwind to create cohesive, user-centric full-stack development ecosystems.",
       icon: <Sparkles size={32} className="text-indigo-600" />
     }
   ];
@@ -32,7 +32,7 @@ const LearningJourney: React.FC = () => {
         <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Academic Roadmap</h2>
         <h3 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">What I’m Learning & Exploring</h3>
         <p className="text-slate-500 text-lg leading-relaxed text-balance">
-          The path to engineering mastery is built on a foundation of continuous curiosity. Here are the core technical pillars of my current academic pursuit as a scholar at LPU.
+          The path to engineering mastery is built on a foundation of constant curiosity. Here are the core technical pillars of my current academic pursuit as a scholar at LPU.
         </p>
       </div>
 
@@ -43,7 +43,7 @@ const LearningJourney: React.FC = () => {
               {item.icon}
             </div>
             <h4 className="text-xl font-bold text-slate-900 mb-4 tracking-tight">{item.title}</h4>
-            <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+            <p className="text-slate-500 text-sm leading-relaxed text-balance">{item.desc}</p>
           </div>
         ))}
       </div>
