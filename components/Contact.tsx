@@ -1,16 +1,22 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, Linkedin, Send, MessageCircle, ChevronDown, CheckCircle2, ShieldCheck, Tag } from 'lucide-react';
+import { Mail, Phone, Linkedin, Send, MessageCircle, ChevronDown, CheckCircle2, ShieldCheck, Tag, Loader2 } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formState, setFormState] = useState({ name: '', email: '', topic: 'General Inquiry', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSent, setIsSent] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSent(true);
-    setTimeout(() => setIsSent(false), 5000);
-    // Here we'd normally send the data
+    setIsSubmitting(true);
+    
+    // Simulate API call
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setIsSent(true);
+      setTimeout(() => setIsSent(false), 5000);
+    }, 1500);
   };
 
   const setTopic = (topic: string) => {
@@ -19,21 +25,21 @@ const Contact: React.FC = () => {
 
   const contactItems = [
     { 
-      label: 'Primary Email', 
+      label: 'Professional Email', 
       val: 'robiulrabbi4@gmail.com', 
       link: 'mailto:robiulrabbi4@gmail.com',
       icon: <Mail size={20} />, 
       color: 'text-indigo-400' 
     },
     { 
-      label: 'Direct Line', 
+      label: 'Direct Mobile', 
       val: '+91 9779949325', 
       link: 'tel:+919779949325',
       icon: <Phone size={20} />, 
       color: 'text-emerald-400' 
     },
     { 
-      label: 'Professional Network', 
+      label: 'LinkedIn Profile', 
       val: 'linkedin.com/in/robiul-rabbi', 
       link: 'https://www.linkedin.com/in/robiul-rabbi-32750a191/',
       icon: <Linkedin size={20} />, 
@@ -43,8 +49,8 @@ const Contact: React.FC = () => {
 
   const quickTopics = [
     { label: "Hire Me", topic: "Internship Opportunity" },
-    { label: "Say Hello", topic: "General Inquiry" },
-    { label: "Project Idea", topic: "Project Collaboration" }
+    { label: "Greeting", topic: "General Inquiry" },
+    { label: "Collaboration", topic: "Project Collaboration" }
   ];
 
   const topics = [
@@ -52,17 +58,17 @@ const Contact: React.FC = () => {
     "Internship Opportunity",
     "Project Collaboration",
     "Technical Consultation",
-    "Feedback"
+    "Academic Discussion"
   ];
 
   return (
     <div className="max-w-7xl mx-auto px-6">
       <div className="grid lg:grid-cols-2 gap-20 items-start">
         <div className="lg:sticky lg:top-32">
-          <h2 className="text-indigo-400 font-bold uppercase tracking-[0.2em] text-xs mb-4">Let's Connect</h2>
-          <h3 className="text-5xl font-extrabold mb-8 text-white leading-tight">Get in Touch</h3>
+          <h2 className="text-indigo-400 font-bold uppercase tracking-[0.2em] text-xs mb-4">Availability</h2>
+          <h3 className="text-5xl font-extrabold mb-8 text-white leading-tight">Connect with Robiul</h3>
           <p className="text-slate-400 text-lg mb-12 leading-relaxed">
-            I am currently living in <span className="text-white font-semibold">Punjab, India</span> and looking forward to connecting with technology enthusiasts, potential employers, or fellow students. 
+            I am currently based in <span className="text-white font-semibold">Punjab, India</span> and open to software development internships, academic collaborations, or professional networking.
           </p>
 
           <div className="space-y-8">
@@ -89,7 +95,7 @@ const Contact: React.FC = () => {
              <div className="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center text-indigo-400 shrink-0">
                 <CheckCircle2 size={24} />
              </div>
-             <p className="text-slate-400 leading-relaxed">I check my inbox daily. You can expect a professional response within <span className="text-indigo-400 font-bold">24 hours</span>.</p>
+             <p className="text-slate-400 leading-relaxed">Active and responsive. Typical turnaround time for all professional inquiries is <span className="text-indigo-400 font-bold">24 hours</span>.</p>
           </div>
         </div>
 
@@ -113,7 +119,10 @@ const Contact: React.FC = () => {
                 <p className="text-slate-400 max-w-xs mx-auto">Thank you for reaching out, {formState.name}. I'll get back to you soon!</p>
                 <button 
                   type="button" 
-                  onClick={() => setIsSent(false)}
+                  onClick={() => {
+                    setIsSent(false);
+                    setFormState({ name: '', email: '', topic: 'General Inquiry', message: '' });
+                  }}
                   className="mt-10 px-8 py-3 bg-slate-700 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-slate-600 transition-colors"
                 >
                   Send Another
@@ -123,7 +132,7 @@ const Contact: React.FC = () => {
               <>
                 <div className="space-y-4">
                   <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest flex items-center gap-2">
-                    <Tag size={12} className="text-indigo-400" /> Quick Topic Tags
+                    <Tag size={12} className="text-indigo-400" /> Select a Topic
                   </label>
                   <div className="flex flex-wrap gap-3">
                     {quickTopics.map((item, idx) => (
@@ -133,7 +142,7 @@ const Contact: React.FC = () => {
                         onClick={() => setTopic(item.topic)}
                         className={`px-4 py-2 rounded-xl text-[11px] font-bold transition-all border ${
                           formState.topic === item.topic 
-                            ? 'bg-indigo-600 border-indigo-600 text-white' 
+                            ? 'bg-indigo-600 border-indigo-600 text-white shadow-lg shadow-indigo-500/30' 
                             : 'bg-slate-700/50 border-slate-600 text-slate-300 hover:border-indigo-400'
                         }`}
                       >
@@ -145,14 +154,14 @@ const Contact: React.FC = () => {
 
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-3">
-                    <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Your Name</label>
+                    <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Full Name</label>
                     <input 
                       type="text" 
                       required
                       value={formState.name}
                       onChange={(e) => setFormState({...formState, name: e.target.value})}
                       className="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/30 transition-all placeholder:text-slate-600"
-                      placeholder="e.g. Robiul"
+                      placeholder="e.g. Robiul Rabbi"
                     />
                   </div>
 
@@ -172,7 +181,7 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="space-y-3">
-                  <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Email Address</label>
+                  <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Professional Email</label>
                   <input 
                     type="email" 
                     required
@@ -184,26 +193,31 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="space-y-3">
-                  <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Message</label>
+                  <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Message Content</label>
                   <textarea 
                     rows={4}
                     required
                     value={formState.message}
                     onChange={(e) => setFormState({...formState, message: e.target.value})}
                     className="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/30 transition-all resize-none placeholder:text-slate-600"
-                    placeholder="How can I help you today?"
+                    placeholder="Tell me about your project or inquiry..."
                   ></textarea>
                 </div>
 
                 <div className="flex flex-col gap-6">
                   <button 
                     type="submit" 
-                    className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-5 rounded-xl flex items-center justify-center gap-3 transition-all shadow-xl shadow-indigo-600/20 active:scale-[0.98]"
+                    disabled={isSubmitting}
+                    className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-5 rounded-xl flex items-center justify-center gap-3 transition-all shadow-xl shadow-indigo-600/20 active:scale-[0.98]"
                   >
-                    Send Message <Send size={18} />
+                    {isSubmitting ? (
+                      <Loader2 className="animate-spin" size={20} />
+                    ) : (
+                      <>Send Message <Send size={18} /></>
+                    )}
                   </button>
-                  <div className="flex items-center justify-center gap-3 opacity-30 group grayscale hover:grayscale-0 transition-all">
-                     <span className="text-[10px] font-black uppercase tracking-widest text-white">Encrypted Transmission</span>
+                  <div className="flex items-center justify-center gap-3 opacity-30">
+                     <span className="text-[10px] font-black uppercase tracking-widest text-white">Safe & Secure Transmission</span>
                      <ShieldCheck size={14} className="text-emerald-400" />
                   </div>
                 </div>

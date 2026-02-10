@@ -1,27 +1,27 @@
 
 import React from 'react';
-import { BookOpen, Layers, Terminal, Sparkles, Binary } from 'lucide-react';
+import { Coffee, Layers, Terminal, Sparkles, BrainCircuit } from 'lucide-react';
 
 const LearningJourney: React.FC = () => {
   const journeys = [
     {
-      title: "Programming Fundamentals",
-      desc: "Mastering the foundational logic of computing through C and C++. Understanding memory management, pointers, and efficient recursion.",
+      title: "Core Programming Foundations",
+      desc: "Deep diving into C and C++ to understand memory management and low-level hardware interaction. Mastering pointers and standard libraries.",
       icon: <Terminal size={32} className="text-indigo-600" />
     },
     {
-      title: "Advanced Software Concepts",
-      desc: "Exploring high-level system designs, database normalization (MySQL), and Object-Oriented patterns in Java to build scalable backends.",
-      icon: <Layers size={32} className="text-indigo-600" />
+      title: "Object-Oriented Excellence",
+      desc: "Specializing in Java (SE) to build robust enterprise-grade architectures. Focusing on inheritance, polymorphism, and secure data handling.",
+      icon: <Coffee size={32} className="text-indigo-600" />
     },
     {
-      title: "Data Structures & Algorithms",
-      desc: "Diving deep into the 'brain' of software. Solving complex problems using optimized trees, graphs, and search algorithms for efficiency.",
-      icon: <Binary size={32} className="text-indigo-600" />
+      title: "Applied Data Structures",
+      desc: "Implementing complex algorithmic solutions including Trees, Graphs, and Hash Maps to ensure optimal performance in all projects.",
+      icon: <BrainCircuit size={32} className="text-indigo-600" />
     },
     {
-      title: "Web & Modern Exploration",
-      desc: "Integrating backend logic with modern frontends. Exploring React and Tailwind to create seamless user experiences and professional portals.",
+      title: "Full-Stack Exploration",
+      desc: "Connecting high-performance backends with modern interfaces. Learning React and Tailwind CSS to bridge the gap between logic and UX.",
       icon: <Sparkles size={32} className="text-indigo-600" />
     }
   ];
@@ -29,10 +29,10 @@ const LearningJourney: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-6">
       <div className="text-center mb-20 max-w-3xl mx-auto">
-        <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Academic Progression</h2>
+        <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Educational Roadmap</h2>
         <h3 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">What I’m Learning & Exploring</h3>
         <p className="text-slate-500 text-lg leading-relaxed">
-          The path to engineering excellence is a continuous cycle of learning. Here are the core domains I am currently specializing in.
+          The path to engineering excellence is built on a foundation of continuous curiosity. Here are the core pillars of my current academic focus.
         </p>
       </div>
 
@@ -42,7 +42,7 @@ const LearningJourney: React.FC = () => {
             <div className="mb-8 p-6 bg-slate-50 rounded-2xl group-hover:bg-indigo-600 group-hover:text-white transition-all duration-500 transform group-hover:scale-110">
               {item.icon}
             </div>
-            <h4 className="text-xl font-bold text-slate-900 mb-4">{item.title}</h4>
+            <h4 className="text-xl font-bold text-slate-900 mb-4 tracking-tight">{item.title}</h4>
             <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
           </div>
         ))}
