@@ -14,7 +14,7 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
     }
   };
 
-  const RESUME_URL = "#"; // Replace with actual resume link
+  const RESUME_URL = "#"; // Replace with your actual hosted resume link
 
   return (
     <div className="min-h-screen flex items-center pt-24 px-6 max-w-7xl mx-auto">
@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
             </h1>
             
             <p className="text-2xl font-medium text-slate-500 max-w-2xl leading-relaxed text-balance border-l-4 border-indigo-200 pl-6">
-              Focused on <span className="text-slate-900">Backend Engineering</span> and high-performance system architecture. Currently architecting scalable solutions with Java, Python, and C++ from Punjab, India.
+              A software engineer in the making based in <span className="text-slate-900">Punjab, India</span>. Specializing in building high-performance <span className="text-slate-900">Backend Architectures</span> with Java, Python, and C++.
             </p>
           </div>
           
@@ -44,13 +44,13 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
               onClick={onPortfolioClick}
               className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-bold flex items-center justify-center gap-3 hover:bg-indigo-600 transition-all shadow-2xl shadow-indigo-500/10 active:scale-95 group"
             >
-              View Portfolio <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              Explore My Work <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
             <button 
               onClick={scrollToContact}
               className="px-10 py-5 border-2 border-slate-200 bg-white text-slate-700 rounded-2xl font-bold flex items-center justify-center gap-3 hover:border-indigo-600 hover:text-indigo-600 transition-all active:scale-95 shadow-sm"
             >
-              <Mail size={20} className="text-indigo-600" /> Connect Me
+              <Mail size={20} className="text-indigo-600" /> Let's Connect
             </button>
           </div>
 
@@ -66,12 +66,10 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
              <div className="h-10 w-px bg-slate-200"></div>
              <a 
               href={RESUME_URL}
-              target="_blank"
-              rel="noopener noreferrer"
               className="flex items-center gap-2 text-slate-500 hover:text-indigo-600 font-bold transition-all group"
             >
               <Download size={18} className="group-hover:translate-y-0.5 transition-transform" /> 
-              <span className="border-b-2 border-transparent group-hover:border-indigo-600">Download Resume</span>
+              <span className="border-b-2 border-transparent group-hover:border-indigo-600">Review Curriculum Vitae</span>
             </a>
           </div>
         </div>
@@ -91,10 +89,10 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
             
             <div className="absolute top-1/2 -right-12 -translate-y-1/2 glass px-6 py-4 rounded-2xl shadow-2xl border border-white/50 backdrop-blur-md hidden md:block">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">LPU</div>
+                <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-xs">LPU</div>
                 <div>
-                  <p className="text-[10px] font-black uppercase text-slate-400 leading-none mb-1">Student At</p>
-                  <p className="text-sm font-bold text-slate-900 leading-none">Lovely Prof. University</p>
+                  <p className="text-[10px] font-black uppercase text-slate-400 leading-none mb-1">Final Year</p>
+                  <p className="text-sm font-bold text-slate-900 leading-none">CSE Student</p>
                 </div>
               </div>
             </div>

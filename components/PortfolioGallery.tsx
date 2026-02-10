@@ -21,48 +21,48 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Student Management System",
-      description: "A robust Java-based application to manage student records, grades, and schedules with an intuitive UI. Features include database integration and real-time reporting.",
-      tech: ["Java", "Swing", "MySQL"],
+      title: "Secure Student Registry",
+      description: "A comprehensive Java-based registry management application. Implements JDBC for MySQL database connectivity, featuring a Swing GUI for efficient data entry and validation.",
+      tech: ["Java", "Swing", "MySQL", "JDBC"],
       category: "Java",
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 2,
-      title: "Algorithm Visualizer",
-      description: "A Python project that visualizes sorting and searching algorithms to help students understand complexity. Interactive controls for speed and data size.",
+      title: "Logic Visualization Engine",
+      description: "A Python project that visualizes complex sorting and searching algorithms in real-time. Designed to clarify time-complexity for academic audiences.",
       tech: ["Python", "Pygame"],
       category: "Python",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 3,
-      title: "Library Portal",
-      description: "A C++ console application implementing advanced data structures like AVL trees and Hash Maps for efficient book tracking and member management.",
-      tech: ["C++", "File I/O"],
+      title: "Optimized Library Registry",
+      description: "A console application implementing advanced C++ data structures like AVL Trees and Hash Maps for efficient book tracking and inventory management.",
+      tech: ["C++", "File I/O", "Data Structures"],
       category: "C++",
       image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 4,
-      title: "Task Automation Script",
-      description: "A collection of Python scripts designed to automate repetitive daily academic tasks, file organization, and data scraping.",
+      title: "DevOps Automation Suite",
+      description: "A collection of robust Python scripts designed to automate local environment setup, academic task parsing, and daily resource management routines.",
       tech: ["Python", "OS Library"],
       category: "Python",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 5,
-      title: "Weather Tracker App",
-      description: "An academic project using Java and OpenWeatherMap API to fetch and display local weather data with dynamic icons.",
+      title: "API-Driven Academic Portal",
+      description: "A Java-based project integrating external APIs to fetch academic news and scheduling data with real-time UI updates.",
       tech: ["Java", "API", "JSON"],
       category: "Java",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 6,
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio designed to showcase my skills and academic journey using React and Tailwind CSS.",
+      title: "Professional Engineer Portfolio",
+      description: "A modern, high-performance portfolio site designed with React and Tailwind CSS to showcase engineering projects and academic milestones.",
       tech: ["React", "Tailwind"],
       category: "Web",
       image: "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&q=80&w=800"
@@ -83,11 +83,11 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
               className="group inline-flex items-center gap-2 text-slate-500 hover:text-indigo-600 font-bold transition-colors"
             >
               <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-              Back to Home
+              Back to Portal
             </button>
-            <h1 className="text-5xl lg:text-7xl font-extrabold text-slate-900 tracking-tight">Project Gallery</h1>
+            <h1 className="text-5xl lg:text-7xl font-extrabold text-slate-900 tracking-tight">Full Project Gallery</h1>
             <p className="text-xl text-slate-500 max-w-2xl leading-relaxed">
-              Exploration and implementation of software engineering principles through academic and personal challenges.
+              Detailed exploration and technical implementation of software engineering principles through academic and personal development.
             </p>
           </div>
         </div>
@@ -96,7 +96,7 @@ const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onBack }) => {
         <div className="flex flex-wrap items-center gap-3 mb-16">
           <div className="flex items-center gap-2 text-slate-400 mr-4">
             <Filter size={18} />
-            <span className="text-[10px] font-black uppercase tracking-widest">Sort By Segment:</span>
+            <span className="text-[10px] font-black uppercase tracking-widest">Filter By Stack:</span>
           </div>
           {categories.map((cat) => (
             <button

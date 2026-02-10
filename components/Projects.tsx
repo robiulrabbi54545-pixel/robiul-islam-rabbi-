@@ -9,31 +9,31 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({ onViewMore }) => {
   const projects = [
     {
-      title: "Secure Student Data Hub",
-      description: "A centralized management system built with Java SE and MySQL. Implements JDBC for secure database transactions and features a Swing-based GUI for administrative controls, focusing on CRUD operations and data integrity.",
+      title: "Secure Student Registry",
+      description: "A comprehensive records management system built in Java. Implements JDBC for MySQL database connectivity, featuring a Swing GUI for efficient data entry, validation, and persistent storage.",
       tech: ["Java", "Swing", "MySQL", "JDBC"],
       category: "Backend Systems",
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
     },
     {
-      title: "Algorithmic Logic Visualizer",
-      description: "A Python-based educational platform that visualizes the execution of complex algorithms. Uses Pygame to render step-by-step sorting processes, helping students grasp time complexity and spatial logic through visual feedback.",
+      title: "Logic Visualization Engine",
+      description: "An interactive algorithm visualizer developed in Python. Utilizes Pygame to demonstrate sorting and searching logic in real-time, helping clarify time-complexity concepts visually.",
       tech: ["Python", "Pygame", "Logic Design"],
       category: "Visualization Tools",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
     },
     {
       title: "Optimized Library Registry",
-      description: "A C++ console application that utilizes advanced data structures (Hash Tables and Binary Search Trees) for O(log n) search performance. Focused on file-based persistence and efficient memory management.",
-      tech: ["C++", "Data Structures", "File I/O"],
+      description: "A high-performance C++ application for book indexing. Implements advanced data structures (Hash Tables and Binary Search Trees) to achieve logarithmic search efficiency and file-based data persistence.",
+      tech: ["C++", "File I/O", "Data Structures"],
       category: "System Utilities",
       image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=800"
     },
     {
-      title: "DevOps Workflow Automation",
-      description: "An automation suite written in Python to streamline local development tasks. Includes custom scripts for environment configuration, log parsing, and automated resource deployment routines.",
+      title: "DevOps Automation Suite",
+      description: "A suite of Python-driven scripts designed to automate local environment configuration and academic resource scrapers, streamlining development workflows for fellow CSE students.",
       tech: ["Python", "Automation", "Shell"],
-      category: "Development Support",
+      category: "Automation-DevOps",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800"
     }
   ];
@@ -42,14 +42,14 @@ const Projects: React.FC<ProjectsProps> = ({ onViewMore }) => {
     <div className="max-w-7xl mx-auto px-6">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
         <div>
-          <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Engineering Showcase</h2>
+          <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Project Showcase</h2>
           <h3 className="text-4xl font-extrabold text-slate-900 leading-tight">Academic & Minor Projects</h3>
         </div>
         <button 
           onClick={onViewMore}
           className="flex items-center gap-3 px-6 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 font-bold hover:border-indigo-600 hover:text-indigo-600 transition-all group shadow-sm"
         >
-          Explore Full Gallery <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+          View Full Project Gallery <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
         </button>
       </div>
 

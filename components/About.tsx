@@ -8,17 +8,17 @@ const About: React.FC = () => {
       <div className="grid lg:grid-cols-12 gap-20">
         <div className="lg:col-span-6 space-y-10">
           <div>
-            <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Core Identity</h2>
-            <h3 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-[1.1]">Computer Science Engineer in Punjab.</h3>
+            <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Professional Bio</h2>
+            <h3 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-[1.1]">Merging Precision Logic with Engineering Excellence.</h3>
             <div className="space-y-6 text-slate-500 text-lg leading-relaxed">
               <p>
-                I am <span className="text-slate-900 font-bold">Robiul Islam Rabbi</span>, a dedicated Computer Science and Engineering student currently residing in <span className="text-indigo-600 font-semibold">Punjab, India</span>. My passion lies in deciphering complex problems and translating them into elegant, efficient backend architectures.
+                My name is <span className="text-slate-900 font-bold">Robiul Islam Rabbi</span>, a Computer Science and Engineering student currently living in <span className="text-indigo-600 font-semibold">Punjab, India</span>. I am driven by the challenge of architecting robust systems that solve real-world problems through code.
               </p>
               <p>
-                As a final-year student at <span className="font-bold text-slate-800">Lovely Professional University (LPU)</span>, I am focused on building a rock-solid foundation in software engineering. I believe that great software is born from the intersection of rigorous logic and creative problem-solving.
+                Currently in my final year at <span className="font-bold text-slate-800">Lovely Professional University (LPU)</span>, I have cultivated a deep expertise in <span className="text-indigo-600 font-semibold">Object-Oriented Programming</span> and backend systems. My core technical stack revolves around Java, C++, and Python, with a strong focus on data structural efficiency.
               </p>
               <p>
-                I thrive in environments that challenge my technical limits, particularly in systems design and backend performance optimization. My goal is to contribute to meaningful technology that makes a tangible difference in how users interact with the digital world.
+                I am not just a developer; I am a lifelong learner committed to staying at the forefront of the technological landscape. My approach to engineering is centered on clarity, maintainability, and scalable performance.
               </p>
             </div>
           </div>
@@ -27,22 +27,22 @@ const About: React.FC = () => {
              <div className="p-6 bg-white border border-slate-100 rounded-2xl flex items-center gap-4 shadow-sm">
                 <MapPin className="text-indigo-600 shrink-0" size={20} />
                 <div>
-                   <p className="text-[10px] font-black uppercase text-slate-400">Current Location</p>
-                   <p className="text-sm font-bold text-slate-900">Punjab, India</p>
+                   <p className="text-[10px] font-black uppercase text-slate-400">Base</p>
+                   <p className="text-sm font-bold text-slate-900">Punjab, IN</p>
                 </div>
              </div>
              <div className="p-6 bg-white border border-slate-100 rounded-2xl flex items-center gap-4 shadow-sm">
                 <GraduationCap className="text-indigo-600 shrink-0" size={20} />
                 <div>
-                   <p className="text-[10px] font-black uppercase text-slate-400">Degree</p>
-                   <p className="text-sm font-bold text-slate-900">B.Tech CSE</p>
+                   <p className="text-[10px] font-black uppercase text-slate-400">University</p>
+                   <p className="text-sm font-bold text-slate-900">LPU</p>
                 </div>
              </div>
              <div className="p-6 bg-white border border-slate-100 rounded-2xl flex items-center gap-4 shadow-sm">
                 <Calendar className="text-indigo-600 shrink-0" size={20} />
                 <div>
-                   <p className="text-[10px] font-black uppercase text-slate-400">Batch</p>
-                   <p className="text-sm font-bold text-slate-900">Final Year</p>
+                   <p className="text-[10px] font-black uppercase text-slate-400">Class</p>
+                   <p className="text-sm font-bold text-slate-900">Batch '25</p>
                 </div>
              </div>
           </div>
@@ -58,7 +58,7 @@ const About: React.FC = () => {
               Engineering Philosophy
             </h4>
             <p className="text-indigo-50 text-lg leading-relaxed relative z-10">
-              "To develop software that is not just functional, but also resilient, scalable, and built on the first principles of computer science."
+              "To build software that isn't just functional, but built on the first principles of computer science: efficiency, scalability, and integrity."
             </p>
           </div>
 
@@ -67,15 +67,15 @@ const About: React.FC = () => {
               <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all">
                 <Code size={24} />
               </div>
-              <h5 className="font-bold text-slate-900 mb-2">Backend Expertise</h5>
-              <p className="text-sm text-slate-500 leading-relaxed">Specializing in Java and Python to create robust server-side logic and database structures.</p>
+              <h5 className="font-bold text-slate-900 mb-2">Backend Proficiency</h5>
+              <p className="text-sm text-slate-500 leading-relaxed">Specializing in Java-based enterprise architectures and high-performance logic.</p>
             </div>
             <div className="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-indigo-100 transition-all group">
               <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all">
                 <BookText size={24} />
               </div>
-              <h5 className="font-bold text-slate-900 mb-2">Continuous Growth</h5>
-              <p className="text-sm text-slate-500 leading-relaxed">Always exploring new frameworks and architectural patterns to stay ahead in the tech stack.</p>
+              <h5 className="font-bold text-slate-900 mb-2">Academic Dedication</h5>
+              <p className="text-sm text-slate-500 leading-relaxed">Maintaining a consistent drive for excellence in theoretical and applied engineering.</p>
             </div>
           </div>
         </div>
