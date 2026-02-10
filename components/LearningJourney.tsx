@@ -1,27 +1,27 @@
 
 import React from 'react';
-import { Coffee, Layers, Terminal, Sparkles, BrainCircuit } from 'lucide-react';
+import { Coffee, Layers, Terminal, Sparkles, BrainCircuit, Box } from 'lucide-react';
 
 const LearningJourney: React.FC = () => {
   const journeys = [
     {
       title: "Core Programming Foundations",
-      desc: "Deep diving into C and C++ to understand memory management and low-level hardware interaction. Mastering pointers and standard libraries.",
+      desc: "Mastering the fundamentals of computation via C and C++. Deep focus on memory addressing, pointers, and iterative vs recursive problem solving.",
       icon: <Terminal size={32} className="text-indigo-600" />
     },
     {
-      title: "Object-Oriented Excellence",
-      desc: "Specializing in Java (SE) to build robust enterprise-grade architectures. Focusing on inheritance, polymorphism, and secure data handling.",
-      icon: <Coffee size={32} className="text-indigo-600" />
+      title: "Object-Oriented Architecture",
+      desc: "In-depth study of OO paradigms in Java. Implementing Abstraction, Encapsulation, Inheritance, and Polymorphism to build scalable modules.",
+      icon: <Box size={32} className="text-indigo-600" />
     },
     {
-      title: "Applied Data Structures",
-      desc: "Implementing complex algorithmic solutions including Trees, Graphs, and Hash Maps to ensure optimal performance in all projects.",
+      title: "Complexity & Data Logic",
+      desc: "Analyzing algorithmic efficiency. Mastering Trees, Graphs, and Hash-based structures to optimize system performance and data retrieval.",
       icon: <BrainCircuit size={32} className="text-indigo-600" />
     },
     {
-      title: "Full-Stack Exploration",
-      desc: "Connecting high-performance backends with modern interfaces. Learning React and Tailwind CSS to bridge the gap between logic and UX.",
+      title: "Full-Stack Interconnectivity",
+      desc: "Learning to bridge backend logic with user-facing interfaces. Exploring React and Tailwind to create cohesive, responsive web applications.",
       icon: <Sparkles size={32} className="text-indigo-600" />
     }
   ];
@@ -29,10 +29,10 @@ const LearningJourney: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-6">
       <div className="text-center mb-20 max-w-3xl mx-auto">
-        <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Educational Roadmap</h2>
+        <h2 className="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Academic Roadmap</h2>
         <h3 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">What I’m Learning & Exploring</h3>
         <p className="text-slate-500 text-lg leading-relaxed">
-          The path to engineering excellence is built on a foundation of continuous curiosity. Here are the core pillars of my current academic focus.
+          The journey of an engineer is one of constant evolution. Here are the core pillars of my current technical focus as a CSE scholar at LPU.
         </p>
       </div>
 

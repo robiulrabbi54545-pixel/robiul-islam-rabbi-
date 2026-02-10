@@ -14,7 +14,7 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
     }
   };
 
-  const RESUME_URL = "https://example.com/robiul-rabbi-resume.pdf";
+  const RESUME_URL = "#"; // Replace with actual resume link
 
   return (
     <div className="min-h-screen flex items-center pt-24 px-6 max-w-7xl mx-auto">
@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
             </h1>
             
             <p className="text-2xl font-medium text-slate-500 max-w-2xl leading-relaxed text-balance border-l-4 border-indigo-200 pl-6">
-              A software engineer in the making based in Punjab, India. I specialize in building scalable backend systems and high-performance applications with Java, C++, and Python.
+              Focused on <span className="text-slate-900">Backend Engineering</span> and high-performance system architecture. Currently architecting scalable solutions with Java, Python, and C++ from Punjab, India.
             </p>
           </div>
           
@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
               onClick={scrollToContact}
               className="px-10 py-5 border-2 border-slate-200 bg-white text-slate-700 rounded-2xl font-bold flex items-center justify-center gap-3 hover:border-indigo-600 hover:text-indigo-600 transition-all active:scale-95 shadow-sm"
             >
-              <Mail size={20} className="text-indigo-600" /> Get in Touch
+              <Mail size={20} className="text-indigo-600" /> Connect Me
             </button>
           </div>
 
@@ -71,12 +71,12 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
               className="flex items-center gap-2 text-slate-500 hover:text-indigo-600 font-bold transition-all group"
             >
               <Download size={18} className="group-hover:translate-y-0.5 transition-transform" /> 
-              <span className="border-b-2 border-transparent group-hover:border-indigo-600">Download Curriculum Vitae</span>
+              <span className="border-b-2 border-transparent group-hover:border-indigo-600">Download Resume</span>
             </a>
           </div>
         </div>
 
-        {/* Right Visual - Refined Circular Frame */}
+        {/* Right Visual */}
         <div className="lg:col-span-5 relative flex justify-center lg:justify-end animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           <div className="relative group">
             <div className="absolute -inset-10 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-full opacity-30 blur-3xl group-hover:opacity-50 transition-opacity"></div>
@@ -93,7 +93,7 @@ const Hero: React.FC<HeroProps> = ({ onPortfolioClick }) => {
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">LPU</div>
                 <div>
-                  <p className="text-[10px] font-black uppercase text-slate-400 leading-none mb-1">Studying At</p>
+                  <p className="text-[10px] font-black uppercase text-slate-400 leading-none mb-1">Student At</p>
                   <p className="text-sm font-bold text-slate-900 leading-none">Lovely Prof. University</p>
                 </div>
               </div>
